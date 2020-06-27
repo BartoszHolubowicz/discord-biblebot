@@ -1,0 +1,23 @@
+{
+  "name": "biblebot",
+  "description": "Access your favourite bible verses easily with this Discord bot.",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node -r dotenv/config dist/index.js"
+  },
+  "dependencies": {
+    "@typeit/discord": "^4.0.8",
+    "@types/node": "^14.0.14",
+    "@types/node-fetch": "^2.5.7",
+    "discord.js": "^12.2.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "prettier": "2.0.5",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.5"
+  }
+}
