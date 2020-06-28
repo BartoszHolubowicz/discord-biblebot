@@ -43,6 +43,7 @@ export const getBibles = async (parameters: GetBiblesProps = {
     }
   } catch (e) {
     console.error(e);
+    return null;
   }
 };
 
@@ -57,6 +58,7 @@ export const getBible = async (bibleId: string) => {
     }
   } catch (e) {
     console.error(e);
+    return null;
   }
 };
 
@@ -71,6 +73,7 @@ export const getBooks = async (bibleId: string) => {
     }
   } catch (e) {
     console.error(e);
+    return null;
   }
 };
 
@@ -87,6 +90,7 @@ export const findBook = async (bibleId: string, abbreviation: string) => {
     }
   } catch (e) {
     console.error(e);
+    return null;
   }
 };
 
@@ -107,6 +111,7 @@ export const findVerse = async (
     }
   } catch (e) {
     console.error(e);
+    return null;
   }
 };
 
@@ -126,5 +131,6 @@ export const findVerses = async (
     return verses;
   } catch (e) {
     console.error(e);
+    return null;
   }
 };
